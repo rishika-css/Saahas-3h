@@ -37,7 +37,7 @@ function ParticleField() {
     <Points ref={pointsRef} positions={positions} stride={3} frustumCulled={false}>
       <PointMaterial
         transparent
-        color="#facc15"
+        color="#0284c7"
         size={3}
         sizeAttenuation
         depthWrite={false}
@@ -60,9 +60,9 @@ function AnimatedGradientPlane() {
     <mesh ref={planeRef} position={[0, 0, -500]} scale={[2000, 2000, 1]}>
       <planeGeometry args={[1, 1]} />
       <meshBasicMaterial
-        color="#000000"
+        color="#e0f2fe"
         transparent
-        opacity={0.8}
+        opacity={0.2}
       />
     </mesh>
   );
@@ -73,7 +73,7 @@ export function AnimatedBackground() {
 
   return (
     <div className="fixed inset-0 -z-10" style={{ 
-      background: `linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2620 100%)`,
+      background: `linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%)`,
       opacity: preferences.brightnessLevel / 100,
     }}>
       <Canvas

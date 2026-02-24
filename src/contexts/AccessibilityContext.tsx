@@ -78,6 +78,7 @@ export function AccessibilityProvider({ children }: { children: React.ReactNode 
         updatePreferences,
         speak,
         stopSpeaking,
+        vibrate,
         speakingActive,
       }}
     >
